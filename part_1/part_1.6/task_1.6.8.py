@@ -10,21 +10,13 @@
 
 class ExtendedStack(list):
     def sum(self):
-        top1 = self.pop()
-        top2 = self.pop()
-        self.append(top1 + top2)
+        self.append(self.pop() + self.pop())
 
     def sub(self):
-        top1 = self.pop()
-        top2 = self.pop()
-        self.append(top1 - top2)
+        self.append(self.pop() - self.pop())
 
     def mul(self):
-        top1 = self.pop()
-        top2 = self.pop()
-        self.append(top1 * top2)
+        self.append(self.pop() * self.pop())
 
     def div(self):
-        top1 = self.pop()
-        top2 = self.pop()
-        self.append(top1 // top2)
+        self.append(self.pop() // self.pop())

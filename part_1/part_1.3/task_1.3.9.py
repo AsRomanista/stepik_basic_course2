@@ -4,13 +4,15 @@
 # y делится нацело на 5
 
 def closest_mod_5(x):
-    y = 5
-    if x < y:
-        return y
-    elif y >= x or x % 5 == 0:
-        return x
-    elif 1 <= x % 5 <= 2:
-        return x + (5 - x % 5)
+    # y = 5
+    # if x < y:
+    #     return y
+    # elif x % 5 == 0:
+    #     return x
+    # else:
+    #     return x + (5 - x % 5)
+
+    return x + (5 - x % 5) % 5
 
 number = int(input())
 
